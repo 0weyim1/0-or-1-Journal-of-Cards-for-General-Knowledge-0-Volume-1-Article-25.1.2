@@ -1,0 +1,208 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1in,left=1in,includefoot]{geometry}
+\usepackage[margin=1in,left=1in,includefoot]{geometry}
+\usepackage{multicol}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+ \usepackage{amsmath}
+ \usepackage{amsfonts}
+ \usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\everymath{\displaystyle}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}%%palatino font for text
+\usepackage[euler-digits,euler-hat-accent]{eulervm}%euler for math font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{ragged2e}%%%%%%%%%%%%%%for \justify
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
+\usepackage{booktabs,tabularx}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{graphicx} % Required for including images
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks=true]{hyperref}%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontspec}
+\usepackage[ethiop,main=english]{babel}
+\newfontface{\geezfont}{FreeSerif}
+\newenvironment{geez}{\geezfont}{}
+\lccode`፡=`፡  \catcode`፡=11
+\lccode`።=`። \catcode`።=11
+\babelprovide[import,
+  onchar = fonts ids,
+  typography/intraspace = 0 .1 0,
+  typography/linebreaking = s, 
+  characters/ranges = 1200..139F 2D80..2DDF AB00..AB2F,
+  ]{amharic}
+\babelfont[amharic]{rm}{FreeSerif}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mystyle}%                % Name
+  {}%                                     % Space above
+  {}%                                     % Space below
+  {\itshape}%                             % Body font
+  {}%                                     % Indent amount
+  {\bfseries}%                            % Theorem head font
+  {.}%                                    % Punctuation after theorem head
+  { }%                                    % Space after theorem head, ' ', or \newline
+  {}%                                     % Theorem head spec (can be left empty, meaning `normal')
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{mystyle}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{solution}{Solution}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem{amharicdefinition}{\begin{geez}ትርጉም\end{geez}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+\numberwithin{theorem}{section}
+\numberwithin{proposition}{section}
+\numberwithin{example}{section}
+\numberwithin{remark}{section}
+\numberwithin{lemma}{section}
+\numberwithin{corollary}{section}
+\numberwithin{definition}{section}
+\numberwithin{amharicdefinition}{section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[shortlabels]{enumitem}
+\usepackage{soul}%%for highlighting texts and equations begin inside $$..\hl{some text here}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}%%to highlight math equations which is inside \begin{equation}...\end{equation}
+\usepackage{authblk}
+\title{
+{\large General Knowledge 0.5 For Pin Number 6}}
+\author[1,2,$*$]{\small Dagnachew Jenber}
+%\author[3]{second author name}
+%\author[4]{third author name}
+\affil[1]{ Department of Mathematics, Bahir Dar University, Bahir Dar, Ethiopia.}
+\affil[2]{Department of Mathematics, Addis Ababa Science and Technology University, Addis Ababa, Ethiopia.}
+%\affil[3]{second author affilation}
+%\affil[4]{third author affiliation}
+\affil[$*$]{Corresponding author: Dagnachew Jenber, dagnachew.Jenber@aastu.edu.et}
+%\date{}                     %% if you don't need date to appear
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+\usepackage{xhfill}
+\setlength{\parindent}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[backend=bibtex,maxnames=1000,minnames=10,maxalphanames=1000,
+minalphanames=10,style=numeric,sorting=anyt,firstinits=true]{biblatex}
+\DeclareNameAlias{default}{last-first}
+\addbibresource{volume-1-article-25.1.2.bib}
+\renewbibmacro{in:}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[tbtags]{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+% Definition of \maketitle
+\makeatletter         
+\def\@maketitle{
+\raggedright
+\begin{center}
+{\large \bfseries \sffamily \@title }\\[1.5ex]
+{  \@author}\\[8ex]
+%\@date\\[8ex]
+\end{center}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand\tableofcontents{%
+  \null\hfill\textbf{\Large\contentsname}\hfill\null\par
+  \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
+  \@starttoc{toc}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\fontfamily{kpfonts}
+\hypersetup{
+  colorlinks,
+  citecolor=red,
+  linkcolor=red,
+  urlcolor=blue}
+
+  \hypersetup{
+  citebordercolor=red,
+  filebordercolor=red,
+  linkbordercolor=blue
+}
+\centering
+{\bf Abstract}
+\justify
+This work presents 46 number of cards from different discplines focused on lower grade english, amharic, geez, physics, and mathematics subject.
+\section{\begin{geez}መግቢያ\end{geez}}
+\label{S:2}
+አሁን ባለንበት ዘመን የአንባቢያን ማህበረሰብ እየቀነሰ መምጣት አሳሳቢ ደረጃ ላይ ደርሷል። በብዙ ምክኒያት ሰወች ቁጭ ብለው
+ማንበብ የተውበት ጊዜ ነው። ለምሳሌ ጠቃሚ ያልሆነ ሶሻል
+ሚዲያ ላይና በአልባሌ ቦታወች ጊዜን ማጥፋት ከብዙወቹ ትንሾቹ ምክኒያቶች ናቸው። በ2017 ዓ.ም ዳኛቸው ለዚህ የሚሆን መፍትሄ ብሎ ያቀረበው 0 ወይም 1 ጨዋታ በሚል ርእስ የተዘጋጀ ትልቅ አክሲዮን ማህበር አለ። ይህ አክሲዮን ማህበር ከላይ የተጠቀሰውን ችግር በሚከተሉት መልኩ መፍታት ይቻላል ብሎ ያምናል። በዚህ ፅሁፍ ውስጥ የተካተተው መፍትሄ አሳማኝ ሆኖ አግኝተነዋል (ለበለጠ መረጃ የ 0 ወይም 1 መመስረቻ ፅሁፍን ይመልከቱ)። በዚህ አክሲዮን ማህበር የቀረበውን መፍትሄ ባጭሩ እንደሚከተለው አስቀምጠነዋል። 
+\begin{enumerate}
+\item[(1)] ማንበብን ወይም ጥናትን መዝናኛና ገንዘብ ማግኛ እንዲሁም ደግሞ ሽልማት የሚያስገኝ ማድረግ። ከማጥኛ ወይም አዲስ እውቀትን ከማግኛ  ዘዴወች ውስጥ አንደኛው ነገሮችን በተመሳሳያቸው በማዛመድ ማወቅ ነው። ለምሳሌ የአንድ እንግሊዘኛ ቃል ብዙ ተመሳሳይ ቃላቶች አሉት። እነሱን በማዛመድ ለመሸምደድ መሞከር ጥሩ ከሚባሉት ዘዴወች ውስጥ አንዱ ነው። ግን ደግሞ ይሄን ልምምዶሽ አይረሴ ለማድረግ በጨዋታ መልክ ሆኖ በቡድን እየተዝናኑና እየተወያዩ ሲሆን ተመራጭ ያደርገዋል።
+ካርድ በማዘጋጀት የእንግሊዘኛ ቃላቶችን ማጥናት በሚል ዙሪያ የተጠኑ ሳይንሳዊ ጥናቶች አሉ (ለምሳሌ፣ እነዚህን ይመልከቱ፣ 
+\cite{aslan2011teaching,azabdaftari2012comparing,bryson2012using,kosim2013improving,
+ nikoopour2014vocabulary,
+nugroho2012improving,
+saputri2017improving,senzaki2017reinventing,sitompul2013teaching,
+wahyuni2014flashcards})።
+\item[(2)] ነገሮችን በአይነት አይነታቸው እያዛማዱ ማወቅ ያመራምራል፣ ጠያቂ ያደርጋል፣ ከጓደኛ ጋር ያከራክራል፣ ማመሳከሪያ መፅሃፍ ፍለጋ እስከመሄድ ድረስ ያደርሳል። እናም በዚህ መልክ ሲሆን ያን ነገር ለመርሳት ብዙ ጊዜ ይጨርሳል። 
+\item[(3)] ማዛመድን ደግሞ ከጓደኛ ጋር ሆነው እየተዝናኑ በጨዋታ መልክ ካደረጉትና እውቀትንና ማወቅን ለማበረታት ደግሞ ለአሸናፊው ጉርሻ በመስጠት ከሆነ ጨዋታውም ተወዳጅ ይሆናል ማለት ነው።
+\item[(4)] ከላይ ከ1-3 የተጠቀሱትን መፍትሔወች ለማከናወን የተለያዩ አይነት አዝናኝ ጨዋታወችን ማዘጋጀት።
+\end{enumerate}
+በዚህ ወረቀት ውስጥ፣ ለ 0 ወይም 1 ጨዋታ የሚሆን ካርድን አዘጋጅተናል። ያዘጋጀነው ካርድ ለጠቅላላ እውቀት 0.5 የሚሆን ሲሆን ከዚህ በፊት ያልተዘጋጁ ካርዶችን የሚዳስስ ነው። ያዘጋጀነውን የካርዶቹን መረጃ ባጭሩ እንደሚከተለው ገልፀነዋል። የመርፌ ብዛት=6 እና k=5 ቢሆኑ። ስለዚህ n=8*5+6=46 ይሆናል። ስለዚህ አጫዋች ካርዶችን ጨምሮ ባጠቃላይ 46 ካርዶች አሉ። ተጫዋች ካርዶች፤ $46-6=40$ ካርዶች ይሆናሉ፤ 40 ደግሞ የ 8 ብዜት ነው (ለበለጠ መረጃ የዜሮ ወይም አንድ መመስረቻ ፅሁፍን ይመልከቱ)።  አጫዋች ካርዶች የሚከተሉት ናቸው፤ God፣ Respect፣  ማዕዘንት፣  Beautiful፣  Speed፣  $1.5$ ናቸው።
+\section{\begin{geez}አጫዋች ካርዶች (Jester Cards)\end{geez}}
+\label{S:2}
+\begin{definition}[God]
+In theology and philosophy, God is often defined as a supreme being, creator, and ultimate authority in many religious traditions (see, Aquinas, Summa Theologica \cite{eberl2015routledge}).\\
+Example: In Christianity, God is described as omniscient, omnipotent, and omnipresent.
+\end{definition}
+\begin{definition}[Respect]
+ Respect is the recognition and consideration of the worth, rights, feelings, or traditions of others (see, Darwall, 1977 \cite{darwall1977two}).\\
+Example: Standing up when an elder enters the room is a sign of respect in many cultures.
+\end{definition}
+\begin{amharicdefinition}[ማዕዘንት]
+\begin{geez}ማዕዘንት ማለት የግእዝ ቃል ሲሆን ትርጉሙም ክብ ማለት ነው።\end{geez}
+\end{amharicdefinition}
+\begin{definition}[Beautiful]
+``Beautiful" describes something that is aesthetically pleasing, evoking admiration or delight (see, Scruton, 2009 \cite{scruton2011beauty}).\\
+Example: The sunset over the ocean was beautiful.
+\end{definition}
+\begin{definition}[speed]
+In physics, speed is the scalar quantity that measures the rate at which an object covers distance, given by (see, Resnick, Halliday \& Krane, 2014 \cite{halliday2017fundamentals}).\\
+Example: A car traveling 60 km in 1 hour has a speed of 60 km/h.
+\end{definition}
+\begin{definition}[1.5]
+The number 1.5 is a rational number, equal to $3/2$ , lying between 1 and 2 on the real number line.\\
+Example: If a recipe calls for 1.5 cups of sugar, it means one full cup and half of another cup.
+\end{definition}
+\section{\begin{geez}ተጫዋች ካርዶች ከነአጫዋቻቸው (Player Cards with their Jester)\end{geez}}
+\label{S:3}
+\begin{enumerate}
+\item God=Jesus=እግዚአብሔር=Holy sprit=Allah=Yahweh=Deity=Almighty=Eternal
+\item Respect=Revere=Reverence=Venerate=Esteem=Deify=Deference=Favor=Regard
+\item ማዕዘንት=Circle centered at the origin=$x^2+y^2=1$ for all $x\in \mathbb{R}$=ከዜሮ ተነስቶ ርዝመቱ አንድ የሆነ ክብ በሁለት ገፅ ላይ="the graph of circle"
+\item Beautiful=Aesthetic=Gorgeous=ቆንጆ=Stunning=Cute=Keen=Marvelous=Pretty
+\item Speed=The magnitude of Velocity=ፍጥነት=ከወወ=Swiftness=Haste=Hurry=Fleetness=Hie
+\item $1-3$÷$2(3-2)$×$3+1$=$1.5$=ላእላዩ 3 እና ታህታዩ 2 የሆነ ቁጥር=$3/2$=$1\frac{1}{2}$
+\end{enumerate}
+\printbibliography
+\end{document}
